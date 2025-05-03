@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-wave {
+    animation: wave 1.5s infinite cubic-bezier(0.42, 0, 0.58, 1);
+  }
+
+  .delay-50 {
+    animation-delay: 0.05s;
+  }
+
+  .delay-100 {
+    animation-delay: 0.15s;
+  }
+
+  .delay-150 {
+    animation-delay: 0.30s;
+  }
+
+  .delay-200 {
+    animation-delay: 0.45s;
+  }
+
+  .delay-250 {
+    animation-delay: 0.60s;
+  }
+
+  .delay-300 {
+    animation-delay: 0.85s;
+  }
+
+  .delay-350 {
+    animation-delay: 1s;
+  }
+
+  .delay-400 {
+    animation-delay: 1.15s;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: scaleY(0.4);
+  }
+  50% {
+    transform: scaleY(1.2);
+  }
+  100% {
+    transform: scaleY(0.4);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
