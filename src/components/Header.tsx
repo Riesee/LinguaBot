@@ -1,4 +1,4 @@
-import Whatsapp from './whatsapp'
+import Whatsapp from './Whatsapp'
 import Navbar from './Navbar'
 
 const Header = () => {
